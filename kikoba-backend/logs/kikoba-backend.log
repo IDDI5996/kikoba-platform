@@ -1,0 +1,387 @@
+2026-10-20 00:00:00 [sched-2] INFO  c.k.k.scheduler.ReminderScheduler - [SCHEDULER] Retrying failed notifications...
+2026-10-20 00:00:00 [sched-4] INFO  c.k.k.scheduler.ReminderScheduler - [SCHEDULER] Running meeting reminders...
+2026-10-20 00:00:00 [sched-2] DEBUG org.hibernate.SQL - 
+    /* SELECT
+        n 
+    FROM
+        Notification n 
+    WHERE
+        n.status = :status 
+        AND n.retryCount < :maxRetries */ select
+            n1_0.id,
+            n1_0.action_url,
+            n1_0.body,
+            n1_0.channel,
+            n1_0.created_at,
+            n1_0.delivered_at,
+            n1_0.expires_at,
+            n1_0.failed_at,
+            n1_0.failure_reason,
+            n1_0.is_read,
+            n1_0.metadata,
+            n1_0.priority,
+            n1_0.read_at,
+            n1_0.reference_id,
+            n1_0.reference_type,
+            n1_0.retry_count,
+            n1_0.sent_at,
+            n1_0.status,
+            n1_0.title,
+            n1_0.type,
+            n1_0.updated_at,
+            n1_0.user_id 
+        from
+            notifications n1_0 
+        where
+            n1_0.status=? 
+            and n1_0.retry_count<?
+2026-10-20 00:00:00 [sched-2] INFO  c.k.k.n.s.i.NotificationServiceImpl - Retried 0 failed notifications
+2026-10-20 00:00:00 [sched-2] INFO  c.k.k.scheduler.ReminderScheduler - [SCHEDULER] Retried 0 failed notifications
+2026-10-20 00:00:00 [sched-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        m1_0.id,
+        m1_0.agenda,
+        m1_0.cancellation_reason,
+        m1_0.completed_by,
+        m1_0.created_at,
+        m1_0.created_by,
+        m1_0.ended_at,
+        m1_0.group_id,
+        m1_0.location,
+        m1_0.minutes,
+        m1_0.scheduled_at,
+        m1_0.started_at,
+        m1_0.status,
+        m1_0.title,
+        m1_0.updated_at,
+        m1_0.video_meeting_id,
+        m1_0.video_meeting_url 
+    from
+        meetings m1_0
+2026-10-20 00:00:00 [sched-4] INFO  c.k.k.scheduler.ReminderScheduler - [SCHEDULER] Sent reminders for 0 meetings
+2026-10-20 00:00:00 [sched-3] DEBUG org.hibernate.SQL - 
+    /* DELETE 
+    FROM
+        OtpCode o 
+    WHERE
+        o.expiresAt < :cutoff */ delete 
+    from
+        otp_codes oc1_0 
+    where
+        oc1_0.expires_at<?
+2026-10-20 00:00:03 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login/initiate
+2026-10-20 00:00:03 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-10-20 00:00:03 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login/initiate
+2026-10-20 00:00:03 [http-nio-8080-exec-8] INFO  c.k.k.a.service.impl.AuthServiceImpl - Initiating login for +25***56
+2026-10-20 00:00:03 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    /* SELECT
+        u 
+    FROM
+        User u 
+    WHERE
+        u.phoneNumber = :phoneNumber */ select
+            u1_0.id,
+            u1_0.admin_role,
+            u1_0.biometric_key,
+            u1_0.created_at,
+            u1_0.device_id,
+            u1_0.email,
+            u1_0.email_verified,
+            u1_0.email_verified_at,
+            u1_0.first_name,
+            u1_0.is_active,
+            u1_0.kyc_document_url,
+            u1_0.kyc_verified,
+            u1_0.kyc_verified_at,
+            u1_0.last_login,
+            u1_0.last_name,
+            u1_0.mfa_enabled,
+            u1_0.mfa_secret,
+            u1_0.password_hash,
+            u1_0.phone_number,
+            u1_0.phone_verified,
+            u1_0.phone_verified_at,
+            u1_0.preferred_language,
+            u1_0.profile_picture_url,
+            u1_0.push_token,
+            u1_0.registration_status,
+            u1_0.updated_at 
+        from
+            users u1_0 
+        where
+            u1_0.phone_number=?
+2026-10-20 00:00:04 [http-nio-8080-exec-8] INFO  c.k.k.a.service.impl.AuthServiceImpl - User logged in (no MFA): ae8a5102-3142-4190-b2b4-2a1f0979f84b
+2026-10-20 00:00:04 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    /* update
+        
+    for
+        com.kikoba.kikoba_backend.user.entity.User */update users 
+    set
+        admin_role=?,
+        biometric_key=?,
+        device_id=?,
+        email=?,
+        email_verified=?,
+        email_verified_at=?,
+        first_name=?,
+        is_active=?,
+        kyc_document_url=?,
+        kyc_verified=?,
+        kyc_verified_at=?,
+        last_login=?,
+        last_name=?,
+        mfa_enabled=?,
+        mfa_secret=?,
+        password_hash=?,
+        phone_number=?,
+        phone_verified=?,
+        phone_verified_at=?,
+        preferred_language=?,
+        profile_picture_url=?,
+        push_token=?,
+        registration_status=?,
+        updated_at=? 
+    where
+        id=?
+2026-10-20 00:00:04 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /ws
+2026-10-20 00:00:04 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2026-10-20 00:00:04 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /ws
+2026-10-20 00:00:04 [http-nio-8080-exec-10] WARN  c.k.k.c.WebSocketHandshakeInterceptor - >>> WS handshake has no token query param
+2026-10-20 00:00:04 [http-nio-8080-exec-3] WARN  c.k.k.c.WebSocketAuthInterceptor - >>> ❌ STOMP CONNECT: no token available
+2026-10-20 00:00:04 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread/count
+2026-10-20 00:00:04 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/groups
+2026-10-20 00:00:04 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread/count
+2026-10-20 00:00:04 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/groups
+2026-10-20 00:00:04 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    /* SELECT
+        COUNT(n) 
+    FROM
+        Notification n 
+    WHERE
+        n.user.id = :userId 
+        AND n.isRead = FALSE */ select
+            count(n1_0.id) 
+        from
+            notifications n1_0 
+        where
+            n1_0.user_id=? 
+            and n1_0.is_read=false
+2026-10-20 00:00:04 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    /* SELECT
+        gm 
+    FROM
+        GroupMember gm 
+    JOIN
+        
+    FETCH
+        gm.group g 
+    LEFT JOIN
+        
+    FETCH
+        g.createdBy 
+    WHERE
+        gm.user.id = :userId 
+        AND gm.isActive = true */ select
+            gm1_0.id,
+            gm1_0.created_at,
+            gm1_0.group_id,
+            g1_0.id,
+            g1_0.created_at,
+            cb1_0.id,
+            cb1_0.admin_role,
+            cb1_0.biometric_key,
+            cb1_0.created_at,
+            cb1_0.device_id,
+            cb1_0.email,
+            cb1_0.email_verified,
+            cb1_0.email_verified_at,
+            cb1_0.first_name,
+            cb1_0.is_active,
+            cb1_0.kyc_document_url,
+            cb1_0.kyc_verified,
+            cb1_0.kyc_verified_at,
+            cb1_0.last_login,
+            cb1_0.last_name,
+            cb1_0.mfa_enabled,
+            cb1_0.mfa_secret,
+            cb1_0.password_hash,
+            cb1_0.phone_number,
+            cb1_0.phone_verified,
+            cb1_0.phone_verified_at,
+            cb1_0.preferred_language,
+            cb1_0.profile_picture_url,
+            cb1_0.push_token,
+            cb1_0.registration_status,
+            cb1_0.updated_at,
+            g1_0.currency,
+            g1_0.cycle_duration_months,
+            g1_0.description,
+            g1_0.interest_rate,
+            g1_0.invitation_code,
+            g1_0.is_active,
+            g1_0.max_contribution,
+            g1_0.meeting_day,
+            g1_0.meeting_frequency,
+            g1_0.meeting_time,
+            g1_0.min_contribution,
+            g1_0.name,
+            g1_0.share_price,
+            g1_0.type,
+            g1_0.updated_at,
+            gm1_0.is_active,
+            gm1_0.joined_at,
+            gm1_0.left_at,
+            gm1_0.role,
+            gm1_0.share_balance,
+            gm1_0.total_contributed,
+            gm1_0.total_loan_balance,
+            gm1_0.updated_at,
+            gm1_0.user_id 
+        from
+            group_members gm1_0 
+        join
+            groups g1_0 
+                on g1_0.id=gm1_0.group_id 
+        left join
+            users cb1_0 
+                on cb1_0.id=g1_0.created_by 
+        where
+            gm1_0.user_id=? 
+            and gm1_0.is_active=true
+2026-10-20 00:00:04 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/groups
+2026-10-20 00:00:04 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/notifications/unread/count
+2026-10-20 00:00:04 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/groups
+2026-10-20 00:00:04 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/notifications/unread/count
+2026-10-20 00:00:04 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    /* SELECT
+        COUNT(n) 
+    FROM
+        Notification n 
+    WHERE
+        n.user.id = :userId 
+        AND n.isRead = FALSE */ select
+            count(n1_0.id) 
+        from
+            notifications n1_0 
+        where
+            n1_0.user_id=? 
+            and n1_0.is_read=false
+2026-10-20 00:00:04 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    /* SELECT
+        gm 
+    FROM
+        GroupMember gm 
+    JOIN
+        
+    FETCH
+        gm.group g 
+    LEFT JOIN
+        
+    FETCH
+        g.createdBy 
+    WHERE
+        gm.user.id = :userId 
+        AND gm.isActive = true */ select
+            gm1_0.id,
+            gm1_0.created_at,
+            gm1_0.group_id,
+            g1_0.id,
+            g1_0.created_at,
+            cb1_0.id,
+            cb1_0.admin_role,
+            cb1_0.biometric_key,
+            cb1_0.created_at,
+            cb1_0.device_id,
+            cb1_0.email,
+            cb1_0.email_verified,
+            cb1_0.email_verified_at,
+            cb1_0.first_name,
+            cb1_0.is_active,
+            cb1_0.kyc_document_url,
+            cb1_0.kyc_verified,
+            cb1_0.kyc_verified_at,
+            cb1_0.last_login,
+            cb1_0.last_name,
+            cb1_0.mfa_enabled,
+            cb1_0.mfa_secret,
+            cb1_0.password_hash,
+            cb1_0.phone_number,
+            cb1_0.phone_verified,
+            cb1_0.phone_verified_at,
+            cb1_0.preferred_language,
+            cb1_0.profile_picture_url,
+            cb1_0.push_token,
+            cb1_0.registration_status,
+            cb1_0.updated_at,
+            g1_0.currency,
+            g1_0.cycle_duration_months,
+            g1_0.description,
+            g1_0.interest_rate,
+            g1_0.invitation_code,
+            g1_0.is_active,
+            g1_0.max_contribution,
+            g1_0.meeting_day,
+            g1_0.meeting_frequency,
+            g1_0.meeting_time,
+            g1_0.min_contribution,
+            g1_0.name,
+            g1_0.share_price,
+            g1_0.type,
+            g1_0.updated_at,
+            gm1_0.is_active,
+            gm1_0.joined_at,
+            gm1_0.left_at,
+            gm1_0.role,
+            gm1_0.share_balance,
+            gm1_0.total_contributed,
+            gm1_0.total_loan_balance,
+            gm1_0.updated_at,
+            gm1_0.user_id 
+        from
+            group_members gm1_0 
+        join
+            groups g1_0 
+                on g1_0.id=gm1_0.group_id 
+        left join
+            users cb1_0 
+                on cb1_0.id=g1_0.created_by 
+        where
+            gm1_0.user_id=? 
+            and gm1_0.is_active=true
+2026-10-20 00:00:16 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/admin/audit-logs?page=0&size=20
+2026-10-20 00:00:16 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/admin/audit-logs?page=0&size=20
+2026-10-20 00:00:16 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        aal1_0.id,
+        aal1_0.action,
+        aal1_0.admin_id,
+        aal1_0.created_at,
+        aal1_0.details,
+        aal1_0.ip_address 
+    from
+        admin_audit_logs aal1_0 
+    order by
+        aal1_0.created_at desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-10-20 00:00:16 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/admin/audit-logs?page=0&size=20
+2026-10-20 00:00:16 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/admin/audit-logs?page=0&size=20
+2026-10-20 00:00:16 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        aal1_0.id,
+        aal1_0.action,
+        aal1_0.admin_id,
+        aal1_0.created_at,
+        aal1_0.details,
+        aal1_0.ip_address 
+    from
+        admin_audit_logs aal1_0 
+    order by
+        aal1_0.created_at desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2026-10-20 00:16:33 [MessageBroker-2] INFO  o.s.w.s.c.WebSocketMessageBrokerStats - WebSocketSession[1 current WS(1)-HttpStream(0)-HttpPoll(0), 23 total, 0 closed abnormally (0 connect failure, 0 send limit, 4 transport error)], stompSubProtocol[processed CONNECT(18)-CONNECTED(18)-DISCONNECT(8)], stompBrokerRelay[null], inboundChannel[unknown], outboundChannel[unknown], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 0, completed tasks = 2]

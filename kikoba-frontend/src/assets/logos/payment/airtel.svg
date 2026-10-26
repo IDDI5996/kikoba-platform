@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+    <!-- Background -->
+    <rect width="200" height="200" rx="20" fill="#ED1C24"/>
+
+    <!-- Airtel swoosh (stylized curved loop) -->
+    <path d="M 100 45
+           C 130 45 155 65 155 90
+           C 155 105 145 115 130 115
+           C 118 115 108 105 100 92
+           C 92 105 82 115 70 115
+           C 55 115 45 105 45 90
+           C 45 65 70 45 100 45 Z"
+          fill="#FFFFFF"
+          opacity="0.95"/>
+    <path d="M 100 62
+           C 120 62 138 75 138 90
+           C 138 100 130 105 122 105
+           C 112 105 105 98 100 88
+           C 95 98 88 105 78 105
+           C 70 105 62 100 62 90
+           C 62 75 80 62 100 62 Z"
+          fill="#ED1C24"/>
+
+    <!-- "airtel" text -->
+    <text x="100" y="152"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="48"
+          font-weight="900"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          letter-spacing="-2">airtel</text>
+
+    <!-- "money" text -->
+    <text x="100" y="184"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="26"
+          font-weight="900"
+          fill="#FFC72C"
+          text-anchor="middle"
+          letter-spacing="0">money</text>
+</svg>

@@ -1,0 +1,30 @@
+# =========================
+# Backend (Spring Boot)
+# =========================
+kikoba-backend/target/
+kikoba-backend/.mvn/wrapper/maven-wrapper.jar
+kikoba-backend/uploads/
+*.class
+
+# =========================
+# Frontend (React / Vite)
+# =========================
+kikoba-frontend/node_modules/
+kikoba-frontend/dist/
+kikoba-frontend/.env
+kikoba-frontend/.env.local
+
+# =========================
+# IDE & OS Files
+# =========================
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# =========================
+# Secrets (DO NOT UPLOAD)
+# =========================
+**/application-local.properties
+**/application-prod.properties

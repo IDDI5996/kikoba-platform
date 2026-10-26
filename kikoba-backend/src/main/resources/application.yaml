@@ -1,0 +1,157 @@
+spring:
+  application:
+    name: kikoba-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kikoba_db
+    username: kikoba_user
+    password: "ZinFai@5996#"
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 300000
+      connection-timeout: 30000
+      max-lifetime: 1800000
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        use_sql_comments: true
+        jdbc:
+          batch_size: 20
+    open-in-view: false
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: kikoba_chat_db
+      username:
+      password:
+      authentication-database: admin
+    redis:
+      host: localhost
+      port: 6379
+      password:
+      timeout: 6000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+
+  cache:
+    type: redis
+    redis:
+      time-to-live: 600000
+      cache-null-values: false
+
+  jackson:
+    time-zone: Africa/Dar_es_Salaam
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
+      enabled: true
+      file-size-threshold: 2MB
+
+server:
+  port: 8080
+  servlet:
+    session:
+      timeout: 30m
+  compression:
+    enabled: true
+    min-response-size: 2048
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+
+jwt:
+  secret: ${JWT_SECRET:your-256-bit-secret-key-for-kikoba-project-please-change-in-production}
+  expiration: 86400000
+  refresh-expiration: 604800000
+
+cors:
+  allowed-origins:
+    - http://localhost:3000
+    - http://localhost:3001
+    - https://your-domain.com
+  allowed-methods: GET,POST,PUT,DELETE,OPTIONS,PATCH
+  allowed-headers: "*"
+  allow-credentials: true
+  max-age: 3600
+
+logging:
+  level:
+    root: INFO
+    com.kikoba: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: logs/kikoba-backend.log
+    max-size: 10MB
+    max-history: 30
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,loggers
+  endpoint:
+    health:
+      show-details: when-authorized
+      show-components: when-authorized
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: ${spring.application.name}
+    version: 1.0.0
+    description: KikobaConnect Backend API
+    environment: ${ACTIVE_PROFILE:development}
+
+# =============================================
+# NOTIFICATION PROVIDERS
+# =============================================
+notification:
+  sms:
+    enabled: false        # Set to true when Africa's Talking is configured
+  email:
+    enabled: false        # Set to true when SMTP is configured
+  push:
+    enabled: false        # Set to true when FCM/APNS is configured
+
+# Spring Mail (for email)
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${EMAIL_USERNAME:}
+    password: ${EMAIL_PASSWORD:}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  from: no-reply@kikobaconnect.com
+
+africastalking:
+  api-key: ${AFRICASTALKING_API_KEY:}
+  username: ${AFRICASTALKING_USERNAME:}
+  short-code: ${AFRICASTALKING_SHORT_CODE:}
+
+app:
+  upload:
+    dir: uploads

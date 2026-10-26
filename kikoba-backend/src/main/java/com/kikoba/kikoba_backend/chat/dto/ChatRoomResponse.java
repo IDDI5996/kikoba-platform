@@ -1,0 +1,26 @@
+package com.kikoba.kikoba_backend.chat.dto;
+
+import com.kikoba.kikoba_backend.chat.entity.ChatType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+import java.util.UUID;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class ChatRoomResponse {
+    private UUID id;
+    private ChatType type;
+    private String name;
+    private UUID kikobaGroupId;
+    private String otherUserAvatarUrl; // For private chats
+    private UUID otherUserId;          // For private chats
+    private String lastMessage;
+    private LocalDateTime lastMessageAt;
+    private long unreadCount;
+}

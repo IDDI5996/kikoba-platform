@@ -1,0 +1,40 @@
+/* ============================================================
+   LOGO CONTAINER & SIZING
+   ============================================================ */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 38px; /* Default medium size */
+  width: auto;
+  flex-shrink: 0;
+  text-decoration: none;
+
+  /* This is the magic that makes it visible on dark or light backgrounds */
+  color: inherit;
+}
+
+.logo svg {
+  height: 100%;
+  width: auto;
+  display: block;
+  /* Removes any default spacing around the SVG */
+  margin: 0;
+}
+
+/* Sizing Variants */
+.logo-sm {
+  height: 28px;
+}
+
+.logo-lg {
+  height: 48px;
+}
+
+/*
+  Optional: If you have a specific hover effect
+  you want for the logo when it's a link
+*/
+a.logo:hover {
+  opacity: 0.9;
+}

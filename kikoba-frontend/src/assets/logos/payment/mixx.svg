@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+    <!-- Background with rounded corners -->
+    <rect width="200" height="200" rx="24" fill="#0A2A6C"/>
+
+    <!-- Yellow leaf shape in bottom-right corner -->
+    <path d="M 200 200
+           L 100 200
+           C 130 195 165 175 180 145
+           C 190 130 195 115 200 100
+           Z"
+          fill="#FFCC00"/>
+
+    <!-- "TZ" text inside the leaf -->
+    <text x="165" y="180"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="28"
+          font-weight="900"
+          fill="#0A2A6C"
+          text-anchor="middle">TZ</text>
+
+    <!-- "mixx" text -->
+    <text x="100" y="115"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="62"
+          font-weight="900"
+          fill="#FFCC00"
+          text-anchor="middle"
+          letter-spacing="-4"
+          font-style="italic">mixx</text>
+</svg>

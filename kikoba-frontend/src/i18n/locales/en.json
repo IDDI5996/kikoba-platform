@@ -1,0 +1,805 @@
+{
+  "app": {
+    "name": "KikobaConnect",
+    "tagline": "Save Together, Grow Together"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "chat": "Chat",
+    "groups": "Groups",
+    "contributions": "Contributions",
+    "loans": "Loans",
+    "meetings": "Meetings",
+    "polls": "Polls",
+    "shares": "Shares",
+    "dividends": "Dividends",
+    "notifications": "Notifications",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "chat": {
+    "title": "Chats",
+    "search": "Search chats...",
+    "noChats": "No chats yet",
+    "selectChat": "Select a chat to start messaging",
+    "typeMessage": "Type a message...",
+    "online": "Online",
+    "offline": "Offline",
+    "typing": "typing...",
+    "groupChat": "Group Chat",
+    "privateChat": "Private Chat",
+    "status": "Status",
+    "myStatus": "My Status",
+    "addStatus": "Add Status",
+    "viewStatus": "View Status",
+    "noStatus": "No status updates",
+    "statusExpires": "Status expires in 24 hours",
+    "settings": "Chat Settings",
+    "muteNotifications": "Mute Notifications",
+    "unmuteNotifications": "Unmute Notifications",
+    "clearChat": "Clear Chat",
+    "blockUser": "Block User",
+    "unblockUser": "Unblock User",
+    "wallpaper": "Wallpaper",
+    "encryptionNotice": "Messages are end-to-end encrypted. No one outside of this chat, not even KikobaConnect, can read or listen to them.",
+    "send": "Send",
+    "attach": "Attach",
+    "deleteMessage": "Delete Message",
+    "editMessage": "Edit Message",
+    "reply": "Reply",
+    "forward": "Forward",
+    "today": "Today",
+    "yesterday": "Yesterday"
+  },
+  "announcements": {
+    "title": "Announcements",
+    "create": "Create Announcement",
+    "announcementTitle": "Announcement Title",
+    "body": "Body",
+    "category": "Category",
+    "pin": "Pin to Top",
+    "pinned": "Pinned",
+    "categories": {
+      "GENERAL": "General",
+      "FINANCIAL": "Financial",
+      "MEETING": "Meeting",
+      "EMERGENCY": "Emergency",
+      "POLICY": "Policy"
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "submit": "Submit",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "finish": "Finish",
+    "loading": "Loading...",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "download": "Download",
+    "print": "Print",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "required": "Required",
+    "optional": "Optional",
+    "actions": "Actions",
+    "status": "Status",
+    "date": "Date",
+    "amount": "Amount",
+    "total": "Total",
+    "all": "All",
+    "none": "None",
+    "viewAll": "View all",
+    "viewDetails": "View details",
+    "noData": "No data",
+    "error": "Something went wrong",
+    "success": "Success",
+    "retry": "Retry"
+  },
+  "auth": {
+    "welcome": "Welcome to KikobaConnect",
+    "subtitle": "The modern platform for community savings group management",
+    "login": "Login",
+    "register": "Register",
+    "getStarted": "Get Started",
+    "phoneNumber": "Phone Number",
+    "phoneHint": "Example: +255 712 345 678",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "email": "Email",
+    "emailOptional": "Email (optional)",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "termsAgree": "I agree to the Terms of Service and Privacy Policy",
+    "alreadyHave": "Already have an account?",
+    "createAccount": "Create Account",
+    "signInTo": "Sign in to your account",
+    "registerSubtitle": "Create your KikobaConnect account",
+    "verifyPhone": "Verify Your Phone Number",
+    "otpSent": "We sent a 6-digit code to {{phone}}",
+    "verify": "Verify",
+    "resendCode": "Resend code",
+    "resendIn": "Resend in {{seconds}} seconds",
+    "changeNumber": "Change phone number",
+    "step": "Step {{current}} of {{total}}",
+    "accountSetup": "Account Setup",
+    "basicInfo": "Basic Information",
+    "mfaTitle": "Two-Factor Authentication",
+    "mfaSubtitle": "Enter the code from your authenticator app",
+    "logoutSuccess": "You have been logged out",
+    "phoneOrEmail": "Phone Number / Email",
+    "phoneOrEmailPlaceholder": "+255 712 345 678 or name@example.com",
+    "resumeEmailStep": "Welcome back! Continue verifying your email.",
+    "secureAccount": "Secure your account",
+    "forgotPasswordHint": "Don't worry, it happens. We'll help you reset your password and get you back to your group.",
+    "enterPhoneToReset": "Enter your phone number to receive a reset code.",
+    "enterOtpAndNewPassword": "Enter the 6-digit code and your new password.",
+    "sendResetCode": "Send Reset Code",
+    "otpCode": "6-Digit Code",
+    "newPassword": "New Password",
+    "resetPassword": "Reset Password",
+    "backToLogin": "Back to Login"
+  },
+  "dashboard": {
+    "managerActions": "Manager Actions",
+    "needAttention": "need attention",
+    "pendingContributionsAction": "Pending Contributions to Confirm",
+    "pendingLoansAction": "Pending Loans to Approve",
+    "managePolls": "Manage Polls",
+    "manageAnnouncements": "Manage Announcements",
+    "manageRoles": "Manage Leadership",
+    "greeting": "Hello, {{name}}",
+    "memberTitle": "Dashboard",
+    "treasurerTitle": "Treasurer Dashboard",
+    "chairpersonTitle": "Chairperson Dashboard",
+    "totalSavings": "Total Savings",
+    "loanBalance": "Loan Balance",
+    "dividendsReceived": "Dividends Received",
+    "quickActions": "Quick Actions",
+    "contribute": "Contribute",
+    "requestLoan": "Request Loan",
+    "viewTransactions": "View Transactions",
+    "joinMeeting": "Join Meeting",
+    "recentActivity": "Recent Activity",
+    "upcomingEvents": "Upcoming Events",
+    "nextMeeting": "Next Meeting",
+    "pendingApproval": "Pending Approval",
+    "contributionDue": "Contribution Due",
+    "groupSummary": "Group Summary",
+    "memberCount": "{{count}} members",
+    "totalGroupSavings": "Total Group Savings",
+    "thisMonth": "this month",
+    "vsLastMonth": "vs last month"
+  },
+  "groups": {
+    "settings": "Group Settings",
+    "currentLeadership": "Current Leadership",
+    "changeRole": "Change Role",
+    "changeReason": "Reason for Change",
+    "changeReasonPlaceholder": "e.g., Sarah has been elected Treasurer at the December meeting",
+    "reasonTooShort": "Reason must be at least 10 characters",
+    "reasonMinimum": "Minimum 10 characters",
+    "roleUpdated": "Role updated",
+    "notifyAllHint": "All members will be notified of this change.",
+    "transparencyWarning": "All changes are public",
+    "transparencyHint": "Any role change you make will be visible to every member of this group. Every change is logged permanently.",
+    "chairpersonTransferBlocked": "Transferring Chairperson role requires group vote (coming soon)",
+    "vacant": "Vacant",
+    "minContribution": "Minimum Contribution",
+    "maxContribution": "Maximum Contribution",
+    "interestRate": "Interest Rate (%)",
+    "cycleDuration": "Cycle Duration (months)",
+    "invitationCode": "Invitation Code",
+    "title": "My Groups",
+    "myGroups": "My Groups",
+    "createGroup": "Create Group",
+    "joinGroup": "Join Group",
+    "groupName": "Group Name",
+    "groupType": "Group Type",
+    "description": "Description",
+    "meetingFrequency": "Meeting Frequency",
+    "meetingDay": "Meeting Day",
+    "meetingTime": "Meeting Time",
+    "currency": "Currency",
+    "shareInvite": "Share Invite",
+    "copyCode": "Copy Code",
+    "copied": "Copied",
+    "inviteByPhone": "Invite by Phone Number",
+    "addNumber": "Add Number",
+    "members": "Members",
+    "role": "Role",
+    "joinedDate": "Joined",
+    "noGroups": "No groups yet",
+    "noGroupsHint": "Start by creating a new group or joining an existing one",
+    "types": {
+      "FAMILY": "Family",
+      "FRIENDS": "Friends",
+      "VICOBA": "VICOBA",
+      "SACCO": "SACCO",
+      "BUSINESS": "Business"
+    },
+    "roles": {
+      "MEMBER": "Member",
+      "TREASURER": "Treasurer",
+      "CHAIRPERSON": "Chairperson",
+      "SECRETARY": "Secretary"
+    },
+    "createGroupSteps": {
+      "basicInfo": "Basic Info",
+      "settings": "Settings",
+      "inviteMembers": "Invite Members"
+    },
+    "joinByCode": "Join by Code",
+    "enterCode": "Enter invitation code",
+    "welcomeTo": "Welcome to {{name}}",
+    "leaveGroup": "Leave Group",
+    "deactivate": "Deactivate"
+  },
+  "contributions": {
+    "title": "Contributions",
+    "makeContribution": "Make Contribution",
+    "myContributions": "My Contributions",
+    "groupContributions": "Group Contributions",
+    "pendingContributions": "Pending Contributions",
+    "confirmContribution": "Confirm Contribution",
+    "contributionAmount": "Contribution Amount",
+    "paymentMethod": "Payment Method",
+    "contributionPeriod": "Contribution Period",
+    "reference": "Reference",
+    "amountBelowMin": "Amount is below the minimum of {{min}}",
+    "amountAboveMax": "Amount exceeds the maximum of {{max}}",
+    "notes": "Additional Notes",
+    "contributionHistory": "Contribution History",
+    "totalContributed": "Total Contributed",
+    "currentBalance": "Current Balance",
+    "summary": "Summary",
+    "thisCycleTotal": "This Cycle Total",
+    "completed": "Completed",
+    "pending": "Pending",
+    "mySummary": "My Summary",
+    "contributionDue": "Contribution Due",
+    "failed": "Failed",
+    "cancelled": "Cancelled",
+    "paymentMethods": {
+      "MPESA": "M-Pesa",
+      "TIGOPESA": "Mixx by Yas (Tigo Pesa)",
+      "AIRTEL": "Airtel Money",
+      "HALOPESA": "HaloPesa",
+      "AZAMPESA": "AzamPesa",
+      "BANK": "Bank",
+      "CASH": "Cash"
+    },
+    "quickAmounts": "Quick Amounts",
+    "confirmSuccess": "Contribution confirmed successfully",
+    "submitSuccess": "Your contribution has been submitted"
+  },
+  "loans": {
+    "title": "Loans",
+    "myLoans": "My Loans",
+    "groupLoans": "Group Loans",
+    "groupAvailable": "Group available funds",
+    "limitedByGroupFunds": "You are limited by the group's current available funds.",
+    "pendingLoans": "Pending Loans",
+    "exceedsGroupFunds": "Amount exceeds the group's available funds",
+    "noGroupFunds": "No Group Funds Available",
+    "noGroupFundsReason": "The group currently has no funds available for new loans.",
+    "applyForLoan": "Apply for Loan",
+    "loanAmount": "Loan Amount",
+    "loanPurpose": "Loan Purpose",
+    "repaymentPeriod": "Repayment Period (months)",
+    "repaymentFrequency": "Repayment Frequency",
+    "interestRate": "Interest Rate",
+    "totalRepayable": "Total Repayable",
+    "balance": "Balance",
+    "months": "months",
+    "awaitingApproval": "Awaiting manager approval",
+    "awaitingDisbursement": "This loan is approved and awaiting disbursement",
+    "notYourLoan": "This is another member's loan. They are repaying it.",
+    "exceedsEligibility": "Amount exceeds your eligibility",
+    "monthlyInstallment": "Monthly Installment",
+    "eligibility": "Eligibility",
+    "eligibleUpTo": "You are eligible up to {{amount}}",
+    "notEligible": "Not currently eligible",
+    "checkEligibility": "Check Eligibility",
+    "submitApplication": "Submit Application",
+    "approveLoan": "Approve Loan",
+    "rejectLoan": "Reject Loan",
+    "disburseLoan": "Disburse",
+    "repayLoan": "Repay Loan",
+    "makeRepayment": "Make Repayment",
+    "repaymentSchedule": "Repayment Schedule",
+    "installmentNumber": "Installment {{number}}",
+    "dueDate": "Due Date",
+    "amountDue": "Amount Due",
+    "amountPaid": "Amount Paid",
+    "overdue": "Overdue",
+    "paid": "Paid",
+    "active": "Active",
+    "status": {
+      "PENDING": "Pending",
+      "APPROVED": "Approved",
+      "REJECTED": "Rejected",
+      "ACTIVE": "Active",
+      "PAID": "Paid",
+      "DEFAULTED": "Defaulted",
+      "CANCELLED": "Cancelled"
+    },
+    "rejectionReason": "Rejection Reason",
+    "applicationSummary": "Application Summary",
+    "termsConditions": "I have read and agree to the Terms"
+  },
+  "meetings": {
+    "title": "Meetings",
+    "upcoming": "Upcoming",
+    "meetingId": "Meeting ID",
+    "joinLink": "Join Link",
+    "copied": "Copied",
+    "past": "Past",
+    "scheduleMeeting": "Schedule Meeting",
+    "meetingTitle": "Meeting Title",
+    "agenda": "Agenda",
+    "minutes": "Minutes",
+    "months": "months",
+    "scheduledFor": "Scheduled for",
+    "location": "Location",
+    "online": "Online",
+    "joinMeeting": "Join Meeting",
+    "startMeeting": "Start Meeting",
+    "endMeeting": "End Meeting",
+    "cancelMeeting": "Cancel Meeting",
+    "attendance": "Attendance",
+    "present": "Present",
+    "absent": "Absent",
+    "excused": "Excused",
+    "late": "Late",
+    "updateMinutes": "Update Minutes",
+    "connected": "Connected",
+    "reconnecting": "Reconnecting...",
+    "presenceHint": "Your attendance is tracked. Stay connected to be counted.",
+    "yourAttendance": "Your Attendance",
+    "timeInMeeting": "Time in meeting",
+    "sessions": "Sessions"
+  },
+  "polls": {
+    "title": "Polls",
+    "activePolls": "Active Polls",
+    "closedPolls": "Closed Polls",
+    "createPoll": "Create Poll",
+    "pollTitle": "Poll Title",
+    "pollDescription": "Description",
+    "options": "Options",
+    "addOption": "Add Option",
+    "removeOption": "Remove",
+    "anonymousVoting": "Anonymous Voting",
+    "multipleChoices": "Multiple Choices",
+    "closesAt": "Closes at",
+    "castVote": "Cast Vote",
+    "submitFinalVote": "Submit Final Vote",
+    "results": "Results",
+    "totalVotes": "Total Votes",
+    "voteRecorded": "Your vote has been recorded",
+    "hasVoted": "You have already voted",
+    "closePoll": "Close Poll",
+    "active": "Active",
+    "closed": "Closed",
+    "cancelled": "Cancelled"
+  },
+  "shares": {
+    "title": "Shares",
+    "myShares": "My Shares",
+    "buyShares": "Buy Shares",
+    "numberOfShares": "Number of Shares",
+    "pricePerShare": "Price per Share",
+    "totalCost": "Total Cost",
+    "sharesHeld": "Shares Held",
+    "currentValue": "Current Value",
+    "sharePrice": "Share Price",
+    "purchaseHistory": "Purchase History"
+  },
+  "dividends": {
+    "title": "Dividends",
+    "myDividends": "My Dividends",
+    "groupDividends": "Group Dividends",
+    "cycleNumber": "Cycle",
+    "totalProfit": "Total Profit",
+    "dividendPerShare": "Dividend per Share",
+    "yourPayout": "Your Payout",
+    "calculateDividend": "Calculate Dividend",
+    "approveDividend": "Approve Dividend",
+    "distributeDividend": "Distribute Dividend",
+    "payoutReceived": "Payout received",
+    "calculated": "Calculated",
+    "approved": "Approved",
+    "distributed": "Distributed"
+  },
+  "notifications": {
+    "confirmDelete": "Delete this notification?",
+    "title": "Notifications",
+    "markAllRead": "Mark All as Read",
+    "clearAll": "Clear All",
+    "unread": "Unread",
+    "read": "Read",
+    "channels": {
+      "IN_APP": "In-App",
+      "SMS": "SMS",
+      "EMAIL": "Email",
+      "PUSH": "Push"
+    },
+    "types": {
+      "CONTRIBUTION_CONFIRMED": "Contribution Confirmed",
+      "LOAN_APPROVED": "Loan Approved",
+      "LOAN_PAYMENT_DUE": "Loan Payment Due",
+      "MEETING_SCHEDULED": "Meeting Scheduled",
+      "MEETING_REMINDER": "Meeting Reminder",
+      "POLL_CREATED": "New Poll",
+      "DIVIDEND_DISTRIBUTED": "Dividend Distributed",
+      "SECURITY_ALERT": "Security Alert"
+    },
+    "categories": {
+      "all": "All",
+      "financial": "Financial",
+      "meetings": "Meetings",
+      "system": "System"
+    },
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "earlier": "Earlier",
+    "empty": "No notifications"
+  },
+  "profile": {
+    "title": "Profile",
+    "settings": "Settings",
+    "personalInfo": "Personal Information",
+    "security": "Security",
+    "changePassword": "Change Password",
+    "enableMfa": "Enable Two-Factor Authentication",
+    "disableMfa": "Disable Two-Factor Authentication",
+    "biometric": "Biometric Login",
+    "kycStatus": "KYC Status",
+    "kycVerified": "Verified",
+    "kycNotVerified": "Not Verified",
+    "uploadId": "Upload ID Document",
+    "preferences": "Preferences",
+    "language": "Language",
+    "notificationPreferences": "Notification Preferences",
+    "theme": "Theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "joinedGroups": "Joined Groups",
+    "logout": "Logout",
+    "printProfile": "Print Profile",
+    "exportGroups": "Export Groups",
+    "editProfile": "Edit Profile",
+    "contact": "Contact",
+    "changePhoto": "Change Photo",
+    "avatarUpdated": "Profile picture updated",
+    "avatarTooLarge": "Image must be under 2 MB",
+    "mfaSettings": "Two-Factor Authentication",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "mfaEnabledHint": "Two-factor authentication is active. You will be asked for a code when you log in from a new device.",
+    "mfaDisabledHint": "Add an extra layer of security. After enabling, you will need an SMS code to sign in.",
+    "kycVerifiedHint": "Your identity has been verified. You have full access to all features.",
+    "kycSubmitHint": "Submit a link to your ID document to complete verification.",
+    "documentUrl": "Document URL",
+    "kycUrlRequired": "Document URL is required",
+    "kycSubmitted": "KYC submitted for review",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "passwordChangeComingSoon": "Password change endpoint coming soon",
+    "confirmLogout": "Sign out of your account?"
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidPhone": "Invalid phone number",
+    "invalidEmail": "Invalid email address",
+    "passwordTooShort": "Password must be at least 8 characters",
+    "passwordMismatch": "Passwords do not match",
+    "networkError": "Network error. Please try again.",
+    "unauthorized": "You are not authorized",
+    "notFound": "Not found",
+    "serverError": "Server error. Please try later."
+  },
+  "landing": {
+    "hero": {
+      "badge": "Built for community savings groups",
+      "subtitle": "The complete digital platform for community savings groups. Contributions, loans, meetings, voting, and chat, all in one secure app.",
+      "hint": "Works on any phone. No app download needed.",
+      "imageAlt": "KikobaConnect mobile app"
+    },
+    "trust": {
+      "label": "Trusted by"
+    },
+    "features": {
+      "title": "Everything your kikoba needs",
+      "subtitle": "One platform with all the tools, built for real community savings groups.",
+      "items": {
+        "savings": {
+          "title": "Group Savings",
+          "desc": "Pool money with your community and track every contribution in real time."
+        },
+        "loans": {
+          "title": "Instant Loans",
+          "desc": "Borrow from your group balance with clear interest and repayment schedules."
+        },
+        "members": {
+          "title": "Member Management",
+          "desc": "Invite, approve, and manage members with roles and an activity log."
+        },
+        "chat": {
+          "title": "Real-time Chat",
+          "desc": "Group and private messaging with delivery ticks, replies, and attachments."
+        },
+        "polls": {
+          "title": "Voting and Decisions",
+          "desc": "Let members decide on loans, leadership, and policies with anonymous votes."
+        },
+        "meetings": {
+          "title": "Meeting Scheduler",
+          "desc": "Plan meetings, track attendance, and store minutes automatically."
+        },
+        "shares": {
+          "title": "Shares and Dividends",
+          "desc": "Distribute profits fairly based on each member's contribution and shares."
+        },
+        "security": {
+          "title": "KYC and 2FA",
+          "desc": "Identity verification and two-factor authentication built in from day one."
+        }
+      }
+    },
+    "showcases": {
+      "savings": {
+        "eyebrow": "Savings and Contributions",
+        "title": "Track every shilling, transparently",
+        "desc": "Members see their contributions, the group balance, and dividend projections in real time. Treasurers confirm payments with one tap, and every transaction is logged forever.",
+        "imageAlt": "Kikoba savings dashboard",
+        "bullets": [
+          "Digital receipts for every contribution",
+          "Automatic balance calculation per cycle",
+          "Full audit trail visible to every member"
+        ]
+      },
+      "loans": {
+        "eyebrow": "Loans and Repayments",
+        "title": "Loans that never exceed the group balance",
+        "desc": "Members apply for loans directly from their phone. The system checks eligibility against group funds, applies your configured interest, and generates a repayment schedule automatically.",
+        "imageAlt": "Loan application screen",
+        "bullets": [
+          "Prevents over-borrowing instantly",
+          "Interest calculated per group rules",
+          "Reminders before every due date"
+        ]
+      },
+      "chat": {
+        "eyebrow": "Built-in Messaging",
+        "title": "Familiar chat inside your kikoba",
+        "desc": "Group and private chats, status updates, delivery ticks, replies, and attachments. Everything your members already know, inside the app your group trusts.",
+        "imageAlt": "Chat interface",
+        "bullets": [
+          "Group and one-on-one conversations",
+          "Read receipts and delivery status",
+          "Share documents, images, and receipts"
+        ]
+      },
+      "roles": {
+        "eyebrow": "Governance and Roles",
+        "title": "Fair leadership, decided by the members",
+        "desc": "Assign Chairperson, Treasurer, Secretary, or Member roles. Every change is logged. Sensitive role changes require a group vote, so no single person can take over.",
+        "imageAlt": "Roles and governance panel",
+        "bullets": [
+          "Role changes require member approval",
+          "Every action tracked permanently",
+          "No single point of control"
+        ]
+      }
+    },
+    "howItWorks": {
+      "title": "Get started in 3 steps",
+      "subtitle": "From signup to your first contribution in under five minutes.",
+      "steps": {
+        "create": {
+          "title": "Create your account",
+          "desc": "Sign up with your phone number and verify with a one-time code."
+        },
+        "join": {
+          "title": "Join or create a group",
+          "desc": "Invite members with a code, or join an existing kikoba in seconds."
+        },
+        "save": {
+          "title": "Start saving together",
+          "desc": "Contribute, borrow, vote, and chat. Everything in one place."
+        }
+      }
+    },
+    "security": {
+      "title": "Security you can trust",
+      "subtitle": "Every member's money and data are protected to bank-grade standards.",
+      "items": {
+        "kyc": {
+          "title": "KYC Verification",
+          "desc": "Members upload ID documents that admins review and approve."
+        },
+        "mfa": {
+          "title": "Two-Factor Auth",
+          "desc": "Add an extra layer of protection to every account."
+        },
+        "encryption": {
+          "title": "Encrypted Messages",
+          "desc": "Private chats are end-to-end encrypted by design."
+        },
+        "notifications": {
+          "title": "Smart Notifications",
+          "desc": "SMS, email, and in-app alerts for what matters to each member."
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to modernise your kikoba?",
+      "subtitle": "Join groups saving smarter, borrowing faster, and deciding together.",
+      "createAccount": "Create free account",
+      "signIn": "Sign in"
+    },
+    "footer": {
+      "product": "Product",
+      "company": "Company",
+      "legal": "Legal",
+      "signUp": "Sign up",
+      "signIn": "Sign in",
+      "about": "About",
+      "contact": "Contact",
+      "terms": "Terms",
+      "privacy": "Privacy"
+    },
+    "trustedBy": "Trusted by",
+    "copyright": "© {{year}} KikobaConnect. All rights reserved."
+  },
+  "about": {
+    "title": "About KikobaConnect",
+    "heroSubtitle": "We are on a mission to modernize community savings groups across Africa by providing transparent, secure, and easy-to-use digital tools.",
+    "storyTitle": "Our Story",
+    "storyP1": "Traditional savings groups (Kikoba, VICOBA, SACCO) are the backbone of many communities. However, managing funds manually with notebooks and calculators often leads to disputes, missing records, and lost opportunities.",
+    "storyP2": "We built KikobaConnect to solve this. We provide a single platform where groups can track contributions, manage loans, vote on decisions, and communicate securely.",
+    "missionTitle": "Our Mission",
+    "missionDesc": "To empower every community with the financial technology they need to grow together securely and fairly.",
+    "valuesTitle": "Our Core Values",
+    "values": {
+      "transparency": { "title": "Transparency", "desc": "Every transaction is logged and visible to all members." },
+      "security": { "title": "Security", "desc": "Bank-grade encryption and KYC verification protect your money." },
+      "community": { "title": "Community First", "desc": "We build tools that foster trust and unity within groups." },
+      "innovation": { "title": "Innovation", "desc": "We constantly improve our platform to meet real-world needs." }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have a question or need help? Our team is here to support you.",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "How can we help you?",
+      "send": "Send Message",
+      "success": "Your message has been sent successfully. We will reply soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "title": "Get in Touch",
+      "email": "support@kikobaconnect.com",
+      "phone": "+255 712 345 678",
+      "addressTitle": "Headquarters",
+      "address": "Dar es Salaam, Tanzania"
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: October 2026",
+    "intro": "Welcome to KikobaConnect. These terms explain the rules for using our platform. By using our service, you agree to these rules. We have written them in simple language so everyone can understand.",
+    "s1": {
+      "title": "Using Our Service",
+      "text": "KikobaConnect is a digital platform that helps savings groups manage money, loans, and communication. You must be at least 18 years old to use this service. You agree to provide accurate information about yourself and your group."
+    },
+    "s2": {
+      "title": "Your Responsibilities",
+      "text": "You are responsible for keeping your password safe. Do not share your account with anyone. You must not use the platform for any illegal activity. All contributions and loans must be recorded honestly."
+    },
+    "s3": {
+      "title": "Electronic Agreements",
+      "text": "Under the Electronic Transactions Act, 2015, your electronic actions on this platform are legally binding. When you click 'confirm' on a contribution or loan, it is the same as signing a paper document."
+    },
+    "s4": {
+      "title": "Data and Privacy",
+      "text": "We collect and protect your personal information according to the Personal Data Protection Act, 2022. Our Privacy Policy explains exactly how we handle your data. By using KikobaConnect, you agree to our Privacy Policy."
+    },
+    "s5": {
+      "title": "Prohibited Actions",
+      "text": "You must not attempt to hack the platform, send false information, or use the service to harass other members. Under the Cybercrimes Act, 2015, these actions are serious offences and will be reported to the Police."
+    },
+    "s6": {
+      "title": "Changes to These Terms",
+      "text": "We may update these terms from time to time. When we do, we will notify you through the app. If you continue using the service after changes are made, it means you accept the new terms."
+    },
+    "contactText": "If you have questions about these Terms, please contact us."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: October 2026",
+    "intro": "Your privacy is important to us. This policy explains what information we collect, why we collect it, and how we protect it. We follow the Personal Data Protection Act, 2022 of Tanzania.",
+    "s1": {
+      "title": "What Information We Collect",
+      "text": "We collect information you give us when you register, such as your name, phone number, and group details. We also record your contributions, loans, and messages to keep the platform working correctly."
+    },
+    "s2": {
+      "title": "How We Use Your Information",
+      "text": "We use your information only for the following purposes:",
+      "item1": "To operate your account and process your contributions and loans.",
+      "item2": "To send you important notifications about your group.",
+      "item3": "To keep the platform safe and prevent fraud."
+    },
+    "s3": {
+      "title": "Your Rights",
+      "text": "Under the law, you have the right to ask us what data we hold about you. You can also ask us to correct any wrong information. If you want to see, change, or delete your data, contact us."
+    },
+    "s4": {
+      "title": "How We Protect Your Data",
+      "text": "We use strong security measures to protect your information. This includes encryption for private chats and secure servers. We do not share your personal data with anyone outside your group without your permission, unless the law requires us to."
+    },
+    "s5": {
+      "title": "Your Communications",
+      "text": "Under Article 16 of the Constitution of Tanzania, your private communications are protected. We do not read your private messages. We only store them securely so you and your group members can access them."
+    },
+    "s6": {
+      "title": "Reporting Problems",
+      "text": "If you believe your data has been misused, please contact us immediately. You also have the right to report a concern to the Personal Data Protection Commission of Tanzania."
+    },
+    "contactText": "If you have any questions about your privacy, please reach out to us."
+  },
+  "admin": {
+    "badge": "ADMIN",
+    "overview": "Overview",
+    "approvals": "Approvals",
+    "userManagement": "User Management",
+    "auditLogs": "Audit Logs",
+    "systemSettings": "System Settings",
+    "myProfile": "My Profile",
+    "logout": "Logout",
+    "backToApp": "Back to App",
+    "secureSession": "Secure Session",
+    "systemOverview": "System Overview",
+    "systemOverviewDesc": "High-level metrics for KikobaConnect.",
+    "totalUsers": "Total Registered Users",
+    "activeGroups": "Active Kikoba Groups",
+    "totalTx": "Total Transactions",
+    "securityNotice": "Security Notice",
+    "securityNoticeDesc": "All actions performed on this dashboard are logged and permanently recorded in the audit trail. Unauthorized access attempts will be reported.",
+    "profile": {
+      "title": "My Profile",
+      "subtitle": "Manage your personal admin account details.",
+      "accountDetails": "Account Details",
+      "fullName": "FULL NAME",
+      "phoneNumber": "PHONE NUMBER",
+      "role": "ROLE",
+      "changePassword": "Change Password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "updatePassword": "Update Password",
+      "updating": "Updating...",
+      "passwordMismatch": "New passwords do not match",
+      "passwordTooShort": "Password must be at least 8 characters",
+      "success": "Password updated successfully",
+      "error": "Failed to update password"
+    }
+  }
+}

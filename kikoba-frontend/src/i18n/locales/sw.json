@@ -1,0 +1,804 @@
+{
+  "app": {
+    "name": "KikobaConnect",
+    "tagline": "Weka Akiba Pamoja, Kua Pamoja"
+  },
+  "nav": {
+    "dashboard": "Nyumbani",
+    "chat": "Mazungumzo",
+    "groups": "Vikundi",
+    "contributions": "Michango",
+    "loans": "Mikopo",
+    "meetings": "Mikutano",
+    "polls": "Kura",
+    "shares": "Hisa",
+    "dividends": "Gawio",
+    "notifications": "Arifa",
+    "profile": "Wasifu",
+    "settings": "Mipangilio",
+    "logout": "Toka"
+  },
+  "chat": {
+    "title": "Mazungumzo",
+    "search": "Tafuta mazungumzo...",
+    "noChats": "Hakuna mazungumzo bado",
+    "selectChat": "Chagua mazungumzo kuanza kutuma ujumbe",
+    "typeMessage": "Andika ujumbe...",
+    "online": "Mtandaoni",
+    "offline": "Nje ya mtandao",
+    "typing": "anaandika...",
+    "groupChat": "Mazungumzo ya Kikundi",
+    "privateChat": "Mazungumzo ya Faragha",
+    "status": "Hali",
+    "myStatus": "Hali Yangu",
+    "addStatus": "Ongeza Hali",
+    "viewStatus": "Ona Hali",
+    "noStatus": "Hakuna masasisho ya hali",
+    "statusExpires": "Hali inaisha baada ya saa 24",
+    "settings": "Mipangilio ya Mazungumzo",
+    "muteNotifications": "Nyamazisha Arifa",
+    "unmuteNotifications": "Washa Arifa",
+    "clearChat": "Futa Mazungumzo",
+    "blockUser": "Zuia Mtumiaji",
+    "unblockUser": "Ondoa Zuio",
+    "wallpaper": "Mandhari ya Ukuta",
+    "encryptionNotice": "Ujumbe umesimbwa kwa njia ya siri kutoka mwanzo hadi mwisho. Hakuna mtu nje ya mazungumzo haya, hata KikobaConnect, anayeweza kuusoma au kuusikiliza.",
+    "send": "Tuma",
+    "attach": "Ambatisha",
+    "deleteMessage": "Futa Ujumbe",
+    "editMessage": "Badilisha Ujumbe",
+    "reply": "Jibu",
+    "forward": "Tuma Mbele",
+    "today": "Leo",
+    "yesterday": "Jana"
+  },
+  "announcements": {
+    "title": "Matangazo",
+    "create": "Unda Tangazo",
+    "announcementTitle": "Kichwa cha Tangazo",
+    "body": "Maelezo",
+    "category": "Kategoria",
+    "pin": "Bandika Juu",
+    "pinned": "Imebandikwa",
+    "categories": {
+      "GENERAL": "Jumla",
+      "FINANCIAL": "Fedha",
+      "MEETING": "Mkutano",
+      "EMERGENCY": "Dharura",
+      "POLICY": "Sera"
+    }
+  },
+  "common": {
+    "save": "Hifadhi",
+    "cancel": "Ghairi",
+    "confirm": "Thibitisha",
+    "submit": "Tuma",
+    "delete": "Futa",
+    "edit": "Badilisha",
+    "back": "Rudi",
+    "next": "Endelea",
+    "previous": "Nyuma",
+    "finish": "Kamilisha",
+    "loading": "Inapakia...",
+    "search": "Tafuta",
+    "filter": "Chuja",
+    "export": "Hamisha",
+    "download": "Pakua",
+    "print": "Chapisha",
+    "close": "Funga",
+    "yes": "Ndiyo",
+    "no": "Hapana",
+    "ok": "Sawa",
+    "required": "Inahitajika",
+    "optional": "Si lazima",
+    "actions": "Vitendo",
+    "status": "Hali",
+    "date": "Tarehe",
+    "amount": "Kiasi",
+    "total": "Jumla",
+    "all": "Zote",
+    "none": "Hakuna",
+    "viewAll": "Ona zote",
+    "viewDetails": "Ona maelezo",
+    "noData": "Hakuna taarifa",
+    "error": "Kuna hitilafu imetokea",
+    "success": "Imefanikiwa",
+    "retry": "Jaribu tena"
+  },
+  "auth": {
+    "welcome": "Karibu KikobaConnect",
+    "subtitle": "Jukwaa la kisasa la usimamizi wa vikundi vya akiba",
+    "login": "Ingia",
+    "register": "Jiunge",
+    "getStarted": "Anza Sasa",
+    "phoneNumber": "Namba ya Simu",
+    "phoneHint": "Mfano: +255 712 345 678",
+    "password": "Neno la Siri",
+    "confirmPassword": "Rudia Neno la Siri",
+    "email": "Barua Pepe",
+    "emailOptional": "Barua Pepe (si lazima)",
+    "firstName": "Jina la Kwanza",
+    "lastName": "Jina la Mwisho",
+    "forgotPassword": "Umesahau neno la siri?",
+    "noAccount": "Hauna akaunti?",
+    "hasAccount": "Una akaunti tayari?",
+    "termsAgree": "Nakubali Masharti ya Matumizi na Sera ya Faragha",
+    "alreadyHave": "Una akaunti?",
+    "createAccount": "Fungua Akaunti",
+    "signInTo": "Ingia kwenye akaunti yako",
+    "registerSubtitle": "Fungua akaunti yako ya KikobaConnect",
+    "verifyPhone": "Thibitisha Namba Yako ya Simu",
+    "otpSent": "Tumetuma msimbo wa tarakimu 6 kwa {{phone}}",
+    "verify": "Thibitisha",
+    "resendCode": "Tuma msimbo tena",
+    "resendIn": "Tuma tena baada ya {{seconds}} sekunde",
+    "changeNumber": "Badilisha namba ya simu",
+    "step": "Hatua {{current}} kati ya {{total}}",
+    "accountSetup": "Usanidi wa Akaunti",
+    "basicInfo": "Taarifa za Msingi",
+    "mfaTitle": "Uthibitisho wa Hatua Mbili",
+    "mfaSubtitle": "Weka msimbo kutoka kwenye programu yako ya uthibitisho",
+    "logoutSuccess": "Umetoka kwa mafanikio",
+    "phoneOrEmail": "Namba ya Simu / Barua Pepe",
+    "phoneOrEmailPlaceholder": "+255 712 345 678 au jina@mfano.com",
+    "resumeEmailStep": "Karibu tena! Endelea kuthibitisha barua pepe yako.",
+    "secureAccount": "Linda akaunti yako",
+    "forgotPasswordHint": "Usijali, hutokea. Tutakusaidia kubadilisha neno la siri na kukurejesha kwenye kikundi chako.",
+    "enterPhoneToReset": "Weka namba yako ya simu ili kupokea msimbo wa kubadilisha.",
+    "enterOtpAndNewPassword": "Weka msimbo wa tarakimu 6 na neno lako jipya la siri.",
+    "sendResetCode": "Tuma Msimbo",
+    "otpCode": "Msimbo wa Tarakimu 6",
+    "newPassword": "Neno Jipya la Siri",
+    "resetPassword": "Badilisha Neno la Siri",
+    "backToLogin": "Rudi Kuingia"
+  },
+  "dashboard": {
+    "managerActions": "Vitendo vya Uongozi",
+    "needAttention": "zinahitaji uangalizi",
+    "pendingContributionsAction": "Michango Inayosubiri Uthibitisho",
+    "pendingLoansAction": "Mikopo Inayosubiri Idhini",
+    "managePolls": "Simamia Kura",
+    "manageAnnouncements": "Simamia Matangazo",
+    "manageRoles": "Simamia Viongozi",
+    "greeting": "Habari, {{name}}",
+    "memberTitle": "Nyumbani",
+    "contributionDue": "Mchango Unadaiwa",
+    "treasurerTitle": "Dashibodi ya Mweka Hazina",
+    "chairpersonTitle": "Dashibodi ya Mwenyekiti",
+    "totalSavings": "Jumla ya Akiba",
+    "loanBalance": "Salio la Mkopo",
+    "dividendsReceived": "Gawio Lililopokelewa",
+    "quickActions": "Vitendo vya Haraka",
+    "contribute": "Toa Mchango",
+    "requestLoan": "Omba Mkopo",
+    "viewTransactions": "Ona Miamala",
+    "joinMeeting": "Jiunge na Mkutano",
+    "recentActivity": "Shughuli za Hivi Karibuni",
+    "upcomingEvents": "Matukio Yanayokuja",
+    "nextMeeting": "Mkutano Ujao",
+    "pendingApproval": "Inasubiri Idhini",
+    "groupSummary": "Muhtasari wa Kikundi",
+    "memberCount": "Wanachama {{count}}",
+    "totalGroupSavings": "Akiba ya Kikundi",
+    "thisMonth": "Mwezi huu",
+    "vsLastMonth": "ikilinganishwa na mwezi uliopita"
+  },
+  "groups": {
+    "settings": "Mipangilio ya Kikundi",
+    "currentLeadership": "Viongozi wa Sasa",
+    "changeRole": "Badilisha Nafasi",
+    "changeReason": "Sababu ya Mabadiliko",
+    "changeReasonPlaceholder": "Mfano: Sarah amechaguliwa kuwa Mweka Hazina katika mkutano wa Desemba",
+    "reasonTooShort": "Sababu iwe na herufi 10 au zaidi",
+    "reasonMinimum": "Angalau herifa 10",
+    "roleUpdated": "Nafasi imebadilishwa",
+    "notifyAllHint": "Wanachama wote wataarifiwa kuhusu mabadiliko haya.",
+    "transparencyWarning": "Mabadiliko yote yanajulikana kwa wote",
+    "transparencyHint": "Mabadiliko yoyote ya nafasi yataonekana kwa kila mwanachama wa kikundi hiki. Kila mabadiliko yanahifadhiwa milele.",
+    "chairpersonTransferBlocked": "Kubadilisha nafasi ya Mwenyekiti kunahitaji kura ya wanachama (inakuja hivi karibuni)",
+    "vacant": "Haina mtu",
+    "title": "Vikundi Vyangu",
+    "myGroups": "Vikundi Vyangu",
+    "createGroup": "Unda Kikundi",
+    "joinGroup": "Jiunge na Kikundi",
+    "groupName": "Jina la Kikundi",
+    "groupType": "Aina ya Kikundi",
+    "description": "Maelezo",
+    "meetingFrequency": "Mara ya Kukutana",
+    "meetingDay": "Siku ya Mkutano",
+    "meetingTime": "Saa ya Mkutano",
+    "minContribution": "Mchango wa Chini",
+    "maxContribution": "Mchango wa Juu",
+    "interestRate": "Riba (%)",
+    "cycleDuration": "Muda wa Mzunguko (miezi)",
+    "currency": "Sarafu",
+    "invitationCode": "Msimbo wa Mwaliko",
+    "shareInvite": "Shiriki Mwaliko",
+    "copyCode": "Nakili Msimbo",
+    "copied": "Imenakiliwa",
+    "inviteByPhone": "Alika kwa Namba ya Simu",
+    "addNumber": "Ongeza Namba",
+    "members": "Wanachama",
+    "role": "Nafasi",
+    "joinedDate": "Tarehe ya Kujiunga",
+    "noGroups": "Hakuna vikundi bado",
+    "noGroupsHint": "Anza kwa kuunda kikundi kipya au kujiunga na kilichopo",
+    "types": {
+      "FAMILY": "Familia",
+      "FRIENDS": "Marafiki",
+      "VICOBA": "VICOBA",
+      "SACCO": "SACCO",
+      "BUSINESS": "Biashara"
+    },
+    "roles": {
+      "MEMBER": "Mwanachama",
+      "TREASURER": "Mweka Hazina",
+      "CHAIRPERSON": "Mwenyekiti",
+      "SECRETARY": "Katibu"
+    },
+    "createGroupSteps": {
+      "basicInfo": "Taarifa za Msingi",
+      "settings": "Mipangilio",
+      "inviteMembers": "Alika Wanachama"
+    },
+    "joinByCode": "Jiunge kwa Msimbo",
+    "enterCode": "Weka msimbo wa mwaliko",
+    "welcomeTo": "Karibu kwenye {{name}}",
+    "leaveGroup": "Toka kwenye Kikundi",
+    "deactivate": "Zima Kikundi"
+  },
+  "contributions": {
+    "title": "Michango",
+    "makeContribution": "Toa Mchango",
+    "myContributions": "Michango Yangu",
+    "groupContributions": "Michango ya Kikundi",
+    "pendingContributions": "Michango Inayosubiri",
+    "confirmContribution": "Thibitisha Mchango",
+    "contributionAmount": "Kiasi cha Mchango",
+    "paymentMethod": "Njia ya Malipo",
+    "contributionPeriod": "Kipindi cha Mchango",
+    "amountBelowMin": "Kiasi ni chini ya kiwango cha chini cha {{min}}",
+    "amountAboveMax": "Kiasi kinazidi kiwango cha juu cha {{max}}",
+    "reference": "Kumbukumbu",
+    "notes": "Maelezo ya Ziada",
+    "contributionHistory": "Historia ya Michango",
+    "totalContributed": "Jumla ya Michango",
+    "currentBalance": "Salio la Sasa",
+    "summary": "Muhtasari",
+    "thisCycleTotal": "Jumla ya Mzunguko huu",
+    "completed": "Imekamilika",
+    "pending": "Inasubiri",
+    "failed": "Imeshindikana",
+    "mySummary": "Muhtasari Wangu",
+    "cancelled": "Imeghairiwa",
+    "paymentMethods": {
+      "MPESA": "M-Pesa",
+      "TIGOPESA": "Mixx by Yas (Tigo Pesa)",
+      "AIRTEL": "Airtel Money",
+      "HALOPESA": "HaloPesa",
+      "AZAMPESA": "AzamPesa",
+      "BANK": "Benki",
+      "CASH": "Fedha Taslimu"
+    },
+    "quickAmounts": "Viwango vya Haraka",
+    "confirmSuccess": "Mchango umethibitishwa kwa mafanikio",
+    "submitSuccess": "Mchango wako umepokelewa"
+  },
+  "loans": {
+    "title": "Mikopo",
+    "myLoans": "Mikopo Yangu",
+    "groupAvailable": "Fedha Zinazopatikana kwa Kikundi",
+    "limitedByGroupFunds": "Umezuiliwa na fedha zilizopo kwenye kikundi.",
+    "exceedsGroupFunds": "Kiasi kinazidi fedha zilizopo kwenye kikundi",
+    "noGroupFunds": "Hakuna Fedha za Kikundi",
+    "noGroupFundsReason": "Kikundi hakina fedha za kutosha kwa mikopo mipya kwa sasa.",
+    "groupLoans": "Mikopo ya Kikundi",
+    "pendingLoans": "Mikopo Inayosubiri",
+    "applyForLoan": "Omba Mkopo",
+    "loanAmount": "Kiasi cha Mkopo",
+    "loanPurpose": "Lengo la Mkopo",
+    "repaymentPeriod": "Kipindi cha Kulipa (miezi)",
+    "repaymentFrequency": "Mara ya Kulipa",
+    "interestRate": "Riba",
+    "awaitingApproval": "Inasubiri idhini ya kiongozi",
+    "awaitingDisbursement": "Mkopo umeidhinishwa, unasubiri kutolewa",
+    "notYourLoan": "Huu ni mkopo wa mwanachama mwingine. Yeye anaulipa.",
+    "months": "miezi",
+    "exceedsEligibility": "Kiasi kinazidi uwezo wako",
+    "totalRepayable": "Jumla ya Kulipa",
+    "balance": "Salio",
+    "monthlyInstallment": "Malipo ya Kila Mwezi",
+    "eligibility": "Ustahiki",
+    "eligibleUpTo": "Unastahili hadi {{amount}}",
+    "notEligible": "Haustahili kwa sasa",
+    "checkEligibility": "Angalia Ustahiki",
+    "submitApplication": "Tuma Maombi",
+    "approveLoan": "Idhinisha Mkopo",
+    "rejectLoan": "Kataa Mkopo",
+    "disburseLoan": "Toa Fedha",
+    "repayLoan": "Lipa Mkopo",
+    "makeRepayment": "Fanya Malipo",
+    "repaymentSchedule": "Ratiba ya Malipo",
+    "installmentNumber": "Malipo ya {{number}}",
+    "dueDate": "Tarehe ya Kulipa",
+    "amountDue": "Kiasi Kinachodaiwa",
+    "amountPaid": "Kiasi Kilicholipwa",
+    "overdue": "Imechelewa",
+    "paid": "Imelipwa",
+    "active": "Inaendelea",
+    "status": {
+      "PENDING": "Inasubiri",
+      "APPROVED": "Imeidhinishwa",
+      "REJECTED": "Imekataliwa",
+      "ACTIVE": "Inaendelea",
+      "PAID": "Imelipwa",
+      "DEFAULTED": "Imeshindwa",
+      "CANCELLED": "Imeghairiwa"
+    },
+    "rejectionReason": "Sababu ya Kukataa",
+    "applicationSummary": "Muhtasari wa Maombi",
+    "termsConditions": "Nimesoma na Nakubaliana na Masharti"
+  },
+  "meetings": {
+    "title": "Mikutano",
+    "upcoming": "Inayokuja",
+    "meetingId": "Kitambulisho cha Mkutano",
+    "joinLink": "Kiungo cha Kujiunga",
+    "copied": "Imenakiliwa",
+    "past": "Iliyopita",
+    "scheduleMeeting": "Panga Mkutano",
+    "meetingTitle": "Kichwa cha Mkutano",
+    "agenda": "Ajenda",
+    "minutes": "Kumbukumbu",
+    "scheduledFor": "Imepangwa kwa",
+    "location": "Mahali",
+    "online": "Mtandaoni",
+    "joinMeeting": "Jiunge na Mkutano",
+    "startMeeting": "Anza Mkutano",
+    "endMeeting": "Maliza Mkutano",
+    "months": "miezi",
+    "cancelMeeting": "Ghairi Mkutano",
+    "attendance": "Mahudhurio",
+    "present": "Yupo",
+    "absent": "Hayupo",
+    "excused": "Ruhusa",
+    "late": "Amechelewa",
+    "updateMinutes": "Sahihisha Kumbukumbu",
+    "connected": "Umeunganishwa",
+    "reconnecting": "Inaunganisha tena...",
+    "presenceHint": "Mahudhurio yako yanafuatiliwa. Baki umeunganishwa ili uhesabiwe.",
+    "yourAttendance": "Mahudhurio Yako",
+    "timeInMeeting": "Muda kwenye mkutano",
+    "sessions": "Vipindi"
+  },
+  "polls": {
+    "title": "Kura",
+    "activePolls": "Kura Zinazoendelea",
+    "closedPolls": "Kura Zilizofungwa",
+    "pollTitle": "Kichwa cha Kura",
+    "pollDescription": "Maelezo",
+    "options": "Chaguo",
+    "addOption": "Ongeza Chaguo",
+    "removeOption": "Ondoa",
+    "createPoll": "Unda Kura",
+    "anonymousVoting": "Upigaji Kura wa Siri",
+    "multipleChoices": "Chaguo Nyingi",
+    "closesAt": "Inafungwa",
+    "castVote": "Piga Kura",
+    "submitFinalVote": "Tuma Kura ya Mwisho",
+    "results": "Matokeo",
+    "totalVotes": "Kura Zote",
+    "voteRecorded": "Kura yako imerekodiwa",
+    "hasVoted": "Umeshapiga kura",
+    "closePoll": "Funga Kura",
+    "active": "Inaendelea",
+    "closed": "Imefungwa",
+    "cancelled": "Imeghairiwa"
+  },
+  "shares": {
+    "title": "Hisa",
+    "myShares": "Hisa Zangu",
+    "buyShares": "Nunua Hisa",
+    "numberOfShares": "Idadi ya Hisa",
+    "pricePerShare": "Bei kwa Hisa",
+    "totalCost": "Jumla ya Gharama",
+    "sharesHeld": "Hisa Unazomiliki",
+    "currentValue": "Thamani ya Sasa",
+    "sharePrice": "Bei ya Hisa",
+    "purchaseHistory": "Historia ya Manunuzi"
+  },
+  "dividends": {
+    "title": "Gawio",
+    "myDividends": "Gawio Langu",
+    "groupDividends": "Gawio la Kikundi",
+    "cycleNumber": "Mzunguko",
+    "totalProfit": "Faida Jumla",
+    "dividendPerShare": "Gawio kwa Hisa",
+    "yourPayout": "Malipo Yako",
+    "calculateDividend": "Kokotoa Gawio",
+    "approveDividend": "Idhinisha Gawio",
+    "distributeDividend": "Sambaza Gawio",
+    "payoutReceived": "Malipo yamepokelewa",
+    "calculated": "Imehesabiwa",
+    "approved": "Imeidhinishwa",
+    "distributed": "Imesambazwa"
+  },
+  "notifications": {
+    "confirmDelete": "Futa arifa hii?",
+    "channels": {
+      "IN_APP": "Ndani ya App",
+      "SMS": "SMS",
+      "EMAIL": "Barua Pepe",
+      "PUSH": "Push"
+    },
+    "types": {
+      "CONTRIBUTION_CONFIRMED": "Mchango Umethibitishwa",
+      "LOAN_APPROVED": "Mkopo Umeidhinishwa",
+      "LOAN_PAYMENT_DUE": "Malipo ya Mkopo Yanadaiwa",
+      "MEETING_SCHEDULED": "Mkutano Umepangwa",
+      "MEETING_REMINDER": "Kikumbusho cha Mkutano",
+      "POLL_CREATED": "Kura Imefunguliwa",
+      "DIVIDEND_DISTRIBUTED": "Gawio Limesambazwa",
+      "SECURITY_ALERT": "Tahadhari ya Usalama"
+    },
+    "title": "Arifa",
+    "markAllRead": "Weka Zote kuwa Zimesomwa",
+    "clearAll": "Futa Zote",
+    "unread": "Hazijasomwa",
+    "read": "Zimesomwa",
+    "categories": {
+      "all": "Zote",
+      "financial": "Fedha",
+      "meetings": "Mikutano",
+      "system": "Mfumo"
+    },
+    "today": "Leo",
+    "yesterday": "Jana",
+    "earlier": "Mapema Zaidi",
+    "empty": "Hakuna arifa"
+  },
+  "profile": {
+    "title": "Wasifu",
+    "settings": "Mipangilio",
+    "personalInfo": "Taarifa Binafsi",
+    "security": "Usalama",
+    "changePassword": "Badilisha Neno la Siri",
+    "enableMfa": "Wezesha Uthibitisho wa Hatua Mbili",
+    "disableMfa": "Zima Uthibitisho wa Hatua Mbili",
+    "biometric": "Alama za Kibaiolojia",
+    "kycStatus": "Hali ya Uthibitisho wa Utambulisho",
+    "kycVerified": "Imethibitishwa",
+    "kycNotVerified": "Haijathibitishwa",
+    "uploadId": "Pakia Kitambulisho",
+    "preferences": "Mapendeleo",
+    "language": "Lugha",
+    "notificationPreferences": "Mapendeleo ya Arifa",
+    "theme": "Mandhari",
+    "themeLight": "Nuru",
+    "themeDark": "Giza",
+    "joinedGroups": "Vikundi Uliyojiunga",
+    "logout": "Toka",
+    "printProfile": "Chapisha Wasifu",
+    "exportGroups": "Hamisha Orodha",
+    "editProfile": "Badilisha Wasifu",
+    "contact": "Mawasiliano",
+    "changePhoto": "Badilisha Picha",
+    "avatarUpdated": "Picha imebadilishwa",
+    "avatarTooLarge": "Picha isizidi 2 MB",
+    "mfaSettings": "Uthibitisho wa Hatua Mbili",
+    "enabled": "Imewezeshwa",
+    "disabled": "Imezimwa",
+    "mfaEnabledHint": "Uthibitisho wa hatua mbili umewashwa. Utaombwa msimbo unapoingia kwenye kifaa kipya.",
+    "mfaDisabledHint": "Ongeza usalama wa ziada. Baada ya kuwezesha, utahitaji msimbo wa SMS kuingia.",
+    "kycVerifiedHint": "Utambulisho wako umethibitishwa. Unaweza kufikia vipengele vyote.",
+    "kycSubmitHint": "Tuma kiungo cha kitambulisho chako kukamilisha uthibitisho.",
+    "documentUrl": "Kiungo cha Kitambulisho",
+    "kycUrlRequired": "Kiungo cha kitambulisho kinahitajika",
+    "kycSubmitted": "KYC imetumwa kwa ukaguzi",
+    "currentPassword": "Neno la Siri la Sasa",
+    "newPassword": "Neno Jipya la Siri",
+    "passwordChangeComingSoon": "Kubadilisha neno la siri kunakuja hivi karibuni",
+    "confirmLogout": "Unataka kutoka kwenye akaunti yako?"
+  },
+  "errors": {
+    "required": "Sehemu hii inahitajika",
+    "invalidPhone": "Namba ya simu si sahihi",
+    "invalidEmail": "Barua pepe si sahihi",
+    "passwordTooShort": "Neno la siri liwe na herufi 8 au zaidi",
+    "passwordMismatch": "Maneno ya siri hayafanani",
+    "networkError": "Kuna tatizo la mtandao. Jaribu tena.",
+    "unauthorized": "Hauna ruhusa ya kufanya hivi",
+    "notFound": "Haipatikani",
+    "serverError": "Hitilafu ya seva. Jaribu baadaye."
+  },
+  "landing": {
+    "hero": {
+      "badge": "Imeundwa kwa vikundi vya akiba vya jamii",
+      "subtitle": "Jukwaa kamili la kidijitali kwa vikundi vya akiba vya jamii. Michango, mikopo, mikutano, kura, na mazungumzo, vyote katika app moja salama.",
+      "hint": "Inafanya kazi kwenye simu yoyote. Hakuna kupakua app.",
+      "imageAlt": "Programu ya simu ya KikobaConnect"
+    },
+    "trust": {
+      "label": "Inaungwa mkono na"
+    },
+    "features": {
+      "title": "Kila kitu ambacho kikoba chako kinahitaji",
+      "subtitle": "Jukwaa moja lenye zana zote, limeundwa kwa vikundi halisi vya akiba vya jamii.",
+      "items": {
+        "savings": {
+          "title": "Akiba ya Kikundi",
+          "desc": "Weka pesa pamoja na jamii yako na fuatilia kila mchango kwa wakati halisi."
+        },
+        "loans": {
+          "title": "Mikopo ya Haraka",
+          "desc": "Kopa kutoka salio la kikundi chako kwa riba wazi na ratiba ya malipo."
+        },
+        "members": {
+          "title": "Usimamizi wa Wanachama",
+          "desc": "Alika, idhinisha, na simamia wanachama kwa nafasi na kumbukumbu za shughuli."
+        },
+        "chat": {
+          "title": "Mazungumzo ya Wakati Halisi",
+          "desc": "Ujumbe wa kikundi na wa faragha na alama za kuwasilishwa, majibu, na viambatisho."
+        },
+        "polls": {
+          "title": "Kura na Maamuzi",
+          "desc": "Ruhusu wanachama kuamua kuhusu mikopo, uongozi, na sera kwa kura za siri."
+        },
+        "meetings": {
+          "title": "Kupanga Mikutano",
+          "desc": "Panga mikutano, fuatilia mahudhurio, na hifadhi kumbukumbu kiotomatiki."
+        },
+        "shares": {
+          "title": "Hisa na Gawio",
+          "desc": "Gawanya faida kwa haki kulingana na mchango na hisa za kila mwanachama."
+        },
+        "security": {
+          "title": "KYC na 2FA",
+          "desc": "Uthibitisho wa utambulisho na uthibitisho wa hatua mbili umejengwa tangu mwanzo."
+        }
+      }
+    },
+    "showcases": {
+      "savings": {
+        "eyebrow": "Akiba na Michango",
+        "title": "Fuatilia kila shilingi kwa uwazi",
+        "desc": "Wanachama wanaona michango yao, salio la kikundi, na makadirio ya gawio kwa wakati halisi. Weka Hazina anathibitisha malipo kwa mguso mmoja, na kila muamala unahifadhiwa milele.",
+        "imageAlt": "Dashibodi ya akiba ya Kikoba",
+        "bullets": [
+          "Risiti za kidijitali kwa kila mchango",
+          "Uhesabuji wa salio kiotomatiki kwa kila mzunguko",
+          "Kumbukumbu kamili inayoonekana kwa kila mwanachama"
+        ]
+      },
+      "loans": {
+        "eyebrow": "Mikopo na Malipo",
+        "title": "Mikopo isiyozidi salio la kikundi",
+        "desc": "Wanachama wanaomba mikopo moja kwa moja kutoka kwenye simu zao. Mfumo hukagua ustahiki dhidi ya fedha za kikundi, hutumia riba uliyoweka, na hutoa ratiba ya malipo kiotomatiki.",
+        "imageAlt": "Skrini ya maombi ya mkopo",
+        "bullets": [
+          "Inazuia kukopa kupita kiasi papo hapo",
+          "Riba inahesabiwa kwa kanuni za kikundi",
+          "Vikumbusho kabla ya kila tarehe ya malipo"
+        ]
+      },
+      "chat": {
+        "eyebrow": "Ujumbe Uliyojengwa Ndani",
+        "title": "Mazungumzo yanayofahamika ndani ya kikoba chako",
+        "desc": "Mazungumzo ya kikundi na ya faragha, masasisho ya hali, alama za kuwasilishwa, majibu, na viambatisho. Kila kitu ambacho wanachama wako wanakijua, ndani ya app ambayo kikundi chako kinaamini.",
+        "imageAlt": "Kiolesura cha mazungumzo",
+        "bullets": [
+          "Mazungumzo ya kikundi na ya mtu mmoja mmoja",
+          "Risiti za kusoma na hali ya kuwasilishwa",
+          "Shiriki nyaraka, picha, na risiti"
+        ]
+      },
+      "roles": {
+        "eyebrow": "Utawala na Nafasi",
+        "title": "Uongozi wa haki, unaoamuliwa na wanachama",
+        "desc": "Weka nafasi za Mwenyekiti, Mweka Hazina, Katibu, au Mwanachama. Kila mabadiliko yanahifadhiwa. Mabadiliko nyeti ya nafasi yanahitaji kura ya kikundi, hivyo mtu mmoja hawezi kuchukua udhibiti.",
+        "imageAlt": "Paneli ya nafasi na utawala",
+        "bullets": [
+          "Mabadiliko ya nafasi yanahitaji idhini ya wanachama",
+          "Kila kitendo kinafuatiliwa milele",
+          "Hakuna udhibiti wa mtu mmoja"
+        ]
+      }
+    },
+    "howItWorks": {
+      "title": "Anza kwa hatua 3",
+      "subtitle": "Kutoka kujisajili hadi mchango wako wa kwanza chini ya dakika tano.",
+      "steps": {
+        "create": {
+          "title": "Fungua akaunti yako",
+          "desc": "Jisajili kwa namba yako ya simu na uthibitishe kwa msimbo wa mara moja."
+        },
+        "join": {
+          "title": "Jiunge au unda kikundi",
+          "desc": "Alika wanachama kwa msimbo, au jiunge na kikoba kilichopo kwa sekunde."
+        },
+        "save": {
+          "title": "Anza kuweka akiba pamoja",
+          "desc": "Changia, kopa, piga kura, na zungumza. Kila kitu mahali pamoja."
+        }
+      }
+    },
+    "security": {
+      "title": "Usalama unaoweza kuaminiwa",
+      "subtitle": "Pesa na data za kila mwanachama zinalindwa kwa viwango vya benki.",
+      "items": {
+        "kyc": {
+          "title": "Uthibitisho wa KYC",
+          "desc": "Wanachama wanapakia nyaraka za kitambulisho ambazo wasimamizi wanakagua na kuidhinisha."
+        },
+        "mfa": {
+          "title": "Uthibitisho wa Hatua Mbili",
+          "desc": "Ongeza safu ya ziada ya ulinzi kwa kila akaunti."
+        },
+        "encryption": {
+          "title": "Ujumbe Uliosimbwa",
+          "desc": "Mazungumzo ya faragha yamesimbwa kutoka mwanzo hadi mwisho kwa muundo."
+        },
+        "notifications": {
+          "title": "Arifa Mahiri",
+          "desc": "SMS, barua pepe, na arifa ndani ya app kwa mambo muhimu kwa kila mwanachama."
+        }
+      }
+    },
+    "cta": {
+      "title": "Uko tayari kuboresha kikoba chako?",
+      "subtitle": "Jiunge na vikundi vinavyoweka akiba kwa akili, kukopa kwa haraka, na kuamua pamoja.",
+      "createAccount": "Fungua akaunti bure",
+      "signIn": "Ingia"
+    },
+    "footer": {
+      "product": "Bidhaa",
+      "company": "Kampuni",
+      "legal": "Kisheria",
+      "signUp": "Jisajili",
+      "signIn": "Ingia",
+      "about": "Kuhusu",
+      "contact": "Wasiliana",
+      "terms": "Masharti",
+      "privacy": "Faragha"
+    },
+    "trustedBy": "Inaungwa mkono na",
+    "copyright": "© {{year}} KikobaConnect. Haki zote zimehifadhiwa."
+  },
+  "about": {
+    "title": "Kuhusu KikobaConnect",
+    "heroSubtitle": "Tuko katika dhamira ya kuboresha vikundi vya akiba vya jamii kote Afrika kwa kutoa zana za kidijitali rahisi, salama na zenye uwazi.",
+    "storyTitle": "Hadithi Yetu",
+    "storyP1": "Vikundi vya jadi vya akiba (Kikoba, VICOBA, SACCO) ni uti wa mgongo wa jamii nyingi. Hata hivyo, kusimamia fedha kwa vitabu na kikokotoo mara nyingi husababisha migogoro, kukosa kumbukumbu, na kupoteza fursa.",
+    "storyP2": "Tulijenga KikobaConnect kutatua hili. Tunatoa jukwaa moja ambapo vikundi vinaweza kufuatilia michango, kusimamia mikopo, kupiga kura, na kuwasiliana kwa usalama.",
+    "missionTitle": "Dhamira Yetu",
+    "missionDesc": "Kuwezesha kila jamii kwa teknolojia ya kifedha inayohitajika ili kukua pamoja kwa usalama na haki.",
+    "valuesTitle": "Maadili Yetu ya Msingi",
+    "values": {
+      "transparency": { "title": "Uwazi", "desc": "Kila muamala unahifadhiwa na unaonekana kwa wanachama wote." },
+      "security": { "title": "Usalama", "desc": "Usimbaji fiche wa kiwango cha benki na uthibitisho wa KYC hulinda pesa zako." },
+      "community": { "title": "Jamii Kwanza", "desc": "Tunajenga zana zinazokuza uaminifu na umoja ndani ya vikundi." },
+      "innovation": { "title": "Ubunifu", "desc": "Tunaboresha jukwaa letu kila wakati ili kukidhi mahitaji ya ulimwengu halisi." }
+    }
+  },
+  "contact": {
+    "title": "Wasiliana Nasi",
+    "subtitle": "Una swali au unahitaji msaada? Timu yetu iko tayari kukusaidia.",
+    "form": {
+      "name": "Jina Lako",
+      "email": "Barua Pepe",
+      "subject": "Mada",
+      "message": "Tunawezaje kukusaidia?",
+      "send": "Tuma Ujumbe",
+      "success": "Ujumbe wako umetumwa kwa mafanikio. Tutajibu hivi karibuni.",
+      "error": "Kuna hitilafu imetokea. Tafadhali jaribu tena."
+    },
+    "info": {
+      "title": "Wasiliana Nasi",
+      "email": "support@kikobaconnect.com",
+      "phone": "+255 712 345 678",
+      "addressTitle": "Makao Makuu",
+      "address": "Dar es Salaam, Tanzania"
+    }
+  },
+  "terms": {
+    "title": "Masharti ya Matumizi",
+    "lastUpdated": "Imesasishwa mwisho: Oktoba 2026",
+    "intro": "Karibu KikobaConnect. Masharti haya yanaeleza kanuni za kutumia jukwaa letu. Kwa kutumia huduma yetu, unakubali kanuni hizi. Tumeziandika kwa lugha rahisi ili kila mtu aweze kuelewa.",
+    "s1": {
+      "title": "Kutumia Huduma Yetu",
+      "text": "KikobaConnect ni jukwaa la kidijitali linalosaidia vikundi vya akiba kusimamia fedha, mikopo, na mawasiliano. Lazima uwe na umri wa miaka 18 au zaidi kutumia huduma hii. Unakubali kutoa taarifa sahihi kuhusu wewe mwenyewe na kikundi chako."
+    },
+    "s2": {
+      "title": "Majukumu Yako",
+      "text": "Wewe ni mhusika wa kulinda neno lako la siri. Usishiriki akaunti yako na mtu yeyote. Hupaswi kutumia jukwaa kwa shughuli zozote haramu. Michango na mikopo yote lazima irekodiwe kwa uaminifu."
+    },
+    "s3": {
+      "title": "Makubaliano ya Kielektroniki",
+      "text": "Chini ya Sheria ya Miamala ya Kielektroniki ya Mwaka 2015, vitendo vyako vya kielektroniki kwenye jukwaa hili ni vya kisheria. Unapobonyeza 'thibitisha' kwenye mchango au mkopo, ni sawa na kusaini hati ya karatasi."
+    },
+    "s4": {
+      "title": "Data na Faragha",
+      "text": "Tunakusanya na kulinda taarifa zako binafsi kulingana na Sheria ya Ulinzi wa Taarifa Binafsi ya Mwaka 2022. Sera yetu ya Faragha inaeleza hasa jinsi tunavyoshughulikia data yako. Kwa kutumia KikobaConnect, unakubali Sera yetu ya Faragha."
+    },
+    "s5": {
+      "title": "Vitendo Vilivyokatazwa",
+      "text": "Hupaswi kujaribu kudukua jukwaa, kutuma taarifa za uongo, au kutumia huduma kuwatesa wanachama wengine. Chini ya Sheria ya Makosa ya Mtandao ya Mwaka 2015, vitendo hivi ni makosa makubwa na vitaripotiwa kwa Polisi."
+    },
+    "s6": {
+      "title": "Mabadiliko ya Masharti Haya",
+      "text": "Tunaweza kusasisha masharti haya mara kwa mara. Tutakapofanya hivyo, tutakujulisha kupitia app. Ukiendelea kutumia huduma baada ya mabadiliko kufanywa, inamaanisha unakubali masharti mapya."
+    },
+    "contactText": "Ikiwa una maswali kuhusu Masharti haya, tafadhali wasiliana nasi."
+  },
+  "privacy": {
+    "title": "Sera ya Faragha",
+    "lastUpdated": "Imesasishwa mwisho: Oktoba 2026",
+    "intro": "Faragha yako ni muhimu kwetu. Sera hii inaeleza ni taarifa gani tunakusanya, kwa nini tunazikusanya, na jinsi tunavyozilinda. Tunafuata Sheria ya Ulinzi wa Taarifa Binafsi ya Mwaka 2022 ya Tanzania.",
+    "s1": {
+      "title": "Ni Taarifa Gani Tunakusanya",
+      "text": "Tunakusanya taarifa unazotupatia unapojisajili, kama jina lako, namba ya simu, na taarifa za kikundi. Pia tunarekodi michango yako, mikopo, na ujumbe ili jukwaa lifanye kazi vizuri."
+    },
+    "s2": {
+      "title": "Jinsi Tunavyotumia Taarifa Zako",
+      "text": "Tunatumia taarifa zako kwa madhumuni yafuatayo tu:",
+      "item1": "Kuendesha akaunti yako na kushughulikia michango na mikopo yako.",
+      "item2": "Kukutumia arifa muhimu kuhusu kikundi chako.",
+      "item3": "Kuifanya jukwaa kuwa salama na kuzuia udanganyifu."
+    },
+    "s3": {
+      "title": "Haki Zako",
+      "text": "Chini ya sheria, una haki ya kutuuliza ni data gani tunayo kuhusu wewe. Unaweza pia kutuomba turekebishe taarifa yoyote isiyo sahihi. Ikiwa unataka kuona, kubadilisha, au kufuta data yako, wasiliana nasi."
+    },
+    "s4": {
+      "title": "Jinsi Tunavyolinda Data Yako",
+      "text": "Tunatumia hatua kali za usalama kulinda taarifa zako. Hii inajumuisha usimbaji fiche wa mazungumzo ya faragha na seva salama. Hatushiriki data yako binafsi na mtu yeyote nje ya kikundi chako bila ruhusa yako, isipokuwa sheria inatulazimu."
+    },
+    "s5": {
+      "title": "Mawasiliano Yako",
+      "text": "Chini ya Ibara ya 16 ya Katiba ya Tanzania, mawasiliano yako ya faragha yanalindwa. Hatusomi ujumbe wako wa faragha. Tunauhifadhi kwa usalama tu ili wewe na wanachama wenzako muweze kuufikia."
+    },
+    "s6": {
+      "title": "Kuripoti Matatizo",
+      "text": "Ikiwa unaamini data yako imetumiwa vibaya, tafadhali wasiliana nasi mara moja. Pia una haki ya kuripoti wasiwasi wako kwa Kamisheni ya Ulinzi wa Taarifa Binafsi ya Tanzania."
+    },
+    "contactText": "Ikiwa una maswali yoyote kuhusu faragha yako, tafadhali wasiliana nasi."
+  },
+  "admin": {
+    "badge": "Msimamizi",
+    "overview": "Muhtasari",
+    "approvals": "Idhini",
+    "userManagement": "Usimamizi wa Watumiaji",
+    "auditLogs": "Kumbukumbu za Ukaguzi",
+    "systemSettings": "Mipangilio ya Mfumo",
+    "myProfile": "Wasifu Wangu",
+    "logout": "Toka",
+    "backToApp": "Rudi kwenye App",
+    "secureSession": "Kikao Salama",
+    "systemOverview": "Muhtasari wa Mfumo",
+    "systemOverviewDesc": "Vipimo vya juu vya KikobaConnect.",
+    "totalUsers": "Jumla ya Watumiaji",
+    "activeGroups": "Vikundi Hai vya Kikoba",
+    "totalTx": "Jumla ya Miamala",
+    "securityNotice": "Tahadhari ya Usalama",
+    "securityNoticeDesc": "Vitendo vyote vinavyofanyika kwenye dashibodi hii vinarekodiwa na kuhifadhiwa kabisa kwenye kumbukumbu. Majaribio yoyote ya ufikiaji usioidhinishwa yataripotiwa.",
+    "profile": {
+      "title": "Wasifu Wangu",
+      "subtitle": "Simamia maelezo ya akaunti yako ya msimamizi.",
+      "accountDetails": "Maelezo ya Akaunti",
+      "fullName": "JINA KAMILI",
+      "phoneNumber": "NAMBA YA SIMU",
+      "role": "WADHIFA",
+      "changePassword": "Badilisha Neno la Siri",
+      "currentPassword": "Neno la Siri la Sasa",
+      "newPassword": "Neno Jipya la Siri",
+      "confirmPassword": "Thibitisha Neno Jipya la Siri",
+      "updatePassword": "Sasisha Neno la Siri",
+      "updating": "Inasasisha...",
+      "passwordMismatch": "Maneno mapya ya siri hayafanani",
+      "passwordTooShort": "Neno la siri liwe na herufi 8 au zaidi",
+      "success": "Neno la siri limesasishwa kwa mafanikio",
+      "error": "Imeshindwa kusasisha neno la siri"
+    }
+  }
+}

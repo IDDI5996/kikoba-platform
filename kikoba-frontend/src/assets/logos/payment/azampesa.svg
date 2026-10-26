@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+    <!-- Background -->
+    <rect width="200" height="200" rx="20" fill="#00A6B8"/>
+
+    <!-- White curved swoosh above "azam" -->
+    <path d="M 25 70
+           C 60 42 140 42 175 70
+           C 140 55 60 55 25 70 Z"
+          fill="#FFFFFF"/>
+
+    <!-- "azam" text -->
+    <text x="100" y="115"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="46"
+          font-weight="700"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          letter-spacing="-1">azam</text>
+
+    <!-- Yellow rounded rectangle for "Pesa" -->
+    <rect x="30" y="130" width="140" height="48" rx="14" fill="#FFC72C"/>
+
+    <!-- "Pesa" text inside the yellow pill -->
+    <text x="100" y="165"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="34"
+          font-weight="600"
+          fill="#00A6B8"
+          text-anchor="middle"
+          letter-spacing="-1">Pesa</text>
+</svg>

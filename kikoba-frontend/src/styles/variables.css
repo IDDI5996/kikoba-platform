@@ -1,0 +1,166 @@
+/* ============================================
+   KIKOBACONNECT DESIGN SYSTEM
+   Professional Fintech Aesthetic
+   ============================================ */
+
+:root {
+  /* ---- Brand Palette ---- */
+  --color-primary-900: #041539;
+  --color-primary-800: #062055;
+  --color-primary-700: #0A2463;      /* Primary - Deep Navy */
+  --color-primary-600: #0E3D8A;
+  --color-primary-500: #1E88E5;      /* Secondary - Action Blue */
+  --color-primary-400: #4BA3F0;
+  --color-primary-300: #7FBCF5;
+  --color-primary-200: #B8D9F9;
+  --color-primary-100: #E3F0FC;
+  --color-primary-50:  #F1F8FE;
+
+  --color-accent-600: #0089A8;
+  --color-accent-500: #00B4D8;       /* Accent - Teal */
+  --color-accent-400: #33C4E0;
+  --color-accent-300: #66D4E8;
+  --color-accent-200: #99E3EF;
+  --color-accent-100: #CCF1F7;
+
+  /* ---- Semantic Colors ---- */
+  --color-success-700: #1B5E20;
+  --color-success-600: #2E7D32;
+  --color-success-500: #43A047;
+  --color-success-100: #E8F5E9;
+
+  --color-warning-700: #B25000;
+  --color-warning-600: #ED6C02;
+  --color-warning-500: #FFA726;
+  --color-warning-100: #FFF3E0;
+
+  --color-danger-700:  #B71C1C;
+  --color-danger-600:  #D32F2F;
+  --color-danger-500:  #E53935;
+  --color-danger-100:  #FFEBEE;
+
+  --color-info-600: #0288D1;
+  --color-info-500: #03A9F4;
+  --color-info-100: #E1F5FE;
+
+  /* ---- Neutrals ---- */
+  --color-neutral-900: #0F172A;
+  --color-neutral-800: #1E293B;
+  --color-neutral-700: #334155;
+  --color-neutral-600: #475569;
+  --color-neutral-500: #64748B;
+  --color-neutral-400: #94A3B8;
+  --color-neutral-300: #CBD5E1;
+  --color-neutral-200: #E2E8F0;
+  --color-neutral-100: #F1F5F9;
+  --color-neutral-50:  #F8FAFC;
+  --color-white: #FFFFFF;
+
+  /* ---- Semantic Surfaces ---- */
+  --bg-page: #F7F9FC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #FFFFFF;
+  --bg-subtle: #F1F5F9;
+  --bg-hover: #EEF3F9;
+
+  --border-default: #E2E8F0;
+  --border-strong: #CBD5E1;
+  --border-focus: var(--color-primary-500);
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #94A3B8;
+  --text-inverse: #FFFFFF;
+
+  /* ---- Typography ---- */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+
+  --text-xs:   0.75rem;   /* 12px */
+  --text-sm:   0.875rem;  /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg:   1.125rem;  /* 18px */
+  --text-xl:   1.25rem;   /* 20px */
+  --text-2xl:  1.5rem;    /* 24px */
+  --text-3xl:  1.875rem;  /* 30px */
+  --text-4xl:  2.25rem;   /* 36px */
+
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+  /* ---- Spacing (8px grid) ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* ---- Radii ---- */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* ---- Shadows (subtle, professional) ---- */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 8px rgba(15, 23, 42, 0.06), 0 2px 4px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 10px 20px rgba(15, 23, 42, 0.08), 0 4px 8px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 20px 40px rgba(15, 23, 42, 0.10), 0 8px 16px rgba(15, 23, 42, 0.06);
+
+  /* ---- Transitions ---- */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ---- Layout ---- */
+  --sidebar-width: 264px;
+  --sidebar-width-collapsed: 72px;
+  --header-height: 64px;
+  --bottom-nav-height: 64px;
+  --container-max: 1280px;
+
+  /* ---- Z-index scale ---- */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+}
+
+/* ---- Dark theme ---- */
+[data-theme="dark"] {
+  --bg-page: #0B1220;
+  --bg-surface: #111C33;
+  --bg-surface-elevated: #17253F;
+  --bg-subtle: #17253F;
+  --bg-hover: #1E2E4D;
+
+  --border-default: #1E2E4D;
+  --border-strong: #334155;
+
+  --text-primary: #F1F5F9;
+  --text-secondary: #CBD5E1;
+  --text-tertiary: #94A3B8;
+  --text-inverse: #0F172A;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.30);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.40);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.45);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.50);
+}
